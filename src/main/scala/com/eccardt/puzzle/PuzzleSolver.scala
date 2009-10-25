@@ -24,7 +24,7 @@ object PuzzleSolver {
 	 val tableLines = lines.dropWhile(! _.contains("wikitable sortable")).takeWhile(! _.contains("</table>"))
 	 XML.loadString(tableLines.mkString + "</table>")
   }
-// here's a change
+
   def main(args: Array[String]): Unit = {
 	 val theXML = screenScrapeWikipedia
 	 // By its nature, screen scraping usually breaks fairly quickly. I saved the
