@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="1" time="0.036" errors="0" skipped="0" tests="2" name="com.eccardt.AppTest">
+  <properties>
+    <property name="java.vendor" value="Sun Microsystems Inc."/>
+    <property name="env.SESSION_MANAGER" value="local/rob2:@/tmp/.ICE-unix/22509,unix/rob2:/tmp/.ICE-unix/22509"/>
+    <property name="localRepository" value="/usr/local/apache-maven-repository"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="env.CVSROOT" value=":ext:qwer@rob:/usr/local/cvsroot"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Server Compiler"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.boot.class.path" value="/usr/local/jdk1.6.0_10/jre/lib/resources.jar:/usr/local/jdk1.6.0_10/jre/lib/rt.jar:/usr/local/jdk1.6.0_10/jre/lib/sunrsasign.jar:/usr/local/jdk1.6.0_10/jre/lib/jsse.jar:/usr/local/jdk1.6.0_10/jre/lib/jce.jar:/usr/local/jdk1.6.0_10/jre/lib/charsets.jar:/usr/local/jdk1.6.0_10/jre/classes"/>
+    <property name="env.PWD" value="/home/rob"/>
+    <property name="env.XDG_SESSION_COOKIE" value="1b0f22b93855881ef3a8d81949125cf2-1256439602.244243-751970287"/>
+    <property name="env.LANG" value="en_US.UTF-8"/>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="java.runtime.version" value="1.6.0_10-b33"/>
+    <property name="env.J2EE_HOME" value="/usr/local/glassfish"/>
+    <property name="env.DISPLAY" value=":0.0"/>
+    <property name="user.name" value="rob"/>
+    <property name="env.USER" value="rob"/>
+    <property name="env.SHELL" value="/bin/bash"/>
+    <property name="env.MOZILLA_FIVE_HOME" value="/usr/lib/xulrunner-1.9"/>
+    <property name="env.KDE_MULTIHEAD" value="false"/>
+    <property name="env.DESKTOP_SESSION" value="kde"/>
+    <property name="env.XDG_DATA_DIRS" value="/usr/local/share/:/usr/share/:/usr/share/gdm/"/>
+    <property name="env.NLSPATH" value="/usr/dt/lib/nls/msg/%L/%N.cat"/>
+    <property name="env.PATH" value="/usr/local/java/bin:/usr/local/bin:/usr/bin:/bin:/usr/games:/usr/local/ant/bin:/usr/local/scala/bin:/usr/local/apache-maven/bin"/>
+    <property name="user.language" value="en"/>
+    <property name="env.GS_LIB" value="/home/rob/.fonts"/>
+    <property name="sun.boot.library.path" value="/usr/local/jdk1.6.0_10/jre/lib/amd64"/>
+    <property name="classworlds.conf" value="/usr/local/eclipseworkspace/.metadata/.plugins/org.maven.ide.eclipse/launches/m2conf7537582052503432489.tmp"/>
+    <property name="env.QT_PLUGIN_PATH" value="/home/rob/.kde/lib/kde4/plugins/:/usr/lib/kde4/plugins/"/>
+    <property name="env.KDE_SESSION_UID" value="1000"/>
+    <property name="java.version" value="1.6.0_10"/>
+    <property name="env.KDE_FULL_SESSION" value="true"/>
+    <property name="user.timezone" value=""/>
+    <property name="env.DBUS_SESSION_BUS_ADDRESS" value="unix:abstract=/tmp/dbus-Q5nyHJXltq,guid=e39e3bd6615f755b5e73df7f4ae3bf33"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="env.SSH_AGENT_PID" value="22412"/>
+    <property name="java.endorsed.dirs" value="/usr/local/jdk1.6.0_10/jre/lib/endorsed"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="env.XCURSOR_THEME" value="#kde_legacy#"/>
+    <property name="java.class.version" value="50.0"/>
+    <property name="env.GDMSESSION" value="kde"/>
+    <property name="env.KDE_SESSION_VERSION" value="4"/>
+    <property name="user.country" value="US"/>
+    <property name="env.GNOME_KEYRING_PID" value="22255"/>
+    <property name="java.home" value="/usr/local/jdk1.6.0_10/jre"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="env.CATALINA_HOME" value="/usr/local/catalina"/>
+    <property name="env.LOGNAME" value="rob"/>
+    <property name="os.version" value="2.6.30-2-amd64"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.version" value="11.0-b15"/>
+    <property name="env.JAVA_HOME" value="/usr/local/java"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="env.WINDOWPATH" value="7:7:7"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="env.GDM_LANG" value="en_US.UTF-8"/>
+    <property name="user.home" value="/home/rob"/>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="env.CLASSPATH" value="./:/usr/local/xerces/xercesImpl.jar:/usr/local/xerces/xml-apis.jar:/usr/local/commapi/comm.jar:/usr/local/scala/lib/scala-library.jar:"/>
+    <property name="env.M2_HOME" value="/usr/local/apache-maven"/>
+    <property name="java.library.path" value="/usr/local/jdk1.6.0_10/jre/lib/amd64/server:/usr/local/jdk1.6.0_10/jre/lib/amd64:/usr/local/jdk1.6.0_10/jre/../lib/amd64:/usr/local/java32/jre/lib/i386/server:/usr/local/java32/jre/lib/i386:/usr/local/java32/jre/../lib/i386:/usr/lib/xulrunner-1.9:/usr/java/packages/lib/amd64:/lib:/usr/lib"/>
+    <property name="java.vendor.url" value="http://java.sun.com/"/>
+    <property name="env.GDM_XSERVER_LOCATION" value="local"/>
+    <property name="java.vm.vendor" value="Sun Microsystems Inc."/>
+    <property name="maven.home" value="EMBEDDED"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.class.path" value="/usr/local/eclipse32/plugins/org.maven.ide.components.maven_embedder_2.1.0.20080530-2300/jars/plexus-classworlds-1.2-alpha-12.jar"/>
+    <property name="env.CVS_RSH" value="ssh"/>
+    <property name="env.XFILESEARCHPATH" value="/usr/dt/app-defaults/%L/Dt"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.vm.specification.version" value="1.0"/>
+    <property name="m2eclipse.workspace.state" value="/usr/local/eclipseworkspace/.metadata/.plugins/org.maven.ide.eclipse/workspacestate.properties"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="env.GTK_RC_FILES" value="/etc/gtk/gtkrc:/home/rob/.gtkrc::/home/rob/.kde/share/config/gtkrc"/>
+    <property name="env.HOME" value="/home/rob"/>
+    <property name="env.ANT_HOME" value="/usr/local/ant"/>
+    <property name="surefire.test.class.path" value="/usr/local/eclipseworkspace/puzzle/target/test-classes:/usr/local/eclipseworkspace/puzzle/target/classes:/usr/local/apache-maven-repository/org/scala-lang/scala-library/2.6.1/scala-library-2.6.1.jar:/usr/local/apache-maven-repository/junit/junit/3.8.1/junit-3.8.1.jar:"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="env.LD_LIBRARY_PATH" value="/usr/local/jdk1.6.0_10/jre/lib/amd64/server:/usr/local/jdk1.6.0_10/jre/lib/amd64:/usr/local/jdk1.6.0_10/jre/../lib/amd64:/usr/local/java32/jre/lib/i386/server:/usr/local/java32/jre/lib/i386:/usr/local/java32/jre/../lib/i386:/usr/lib/xulrunner-1.9"/>
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi"/>
+    <property name="env.SSH_AUTH_SOCK" value="/tmp/ssh-vnpDo22270/agent.22270"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.ext.dirs" value="/usr/local/jdk1.6.0_10/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="user.dir" value="/usr/local/eclipseworkspace/puzzle"/>
+    <property name="env.XAUTHORITY" value="/home/rob/.Xauthority"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="env.GTK2_RC_FILES" value="/etc/gtk-2.0/gtkrc:/home/rob/.gtkrc-2.0::/home/rob/.kde/share/config/gtkrc-2.0"/>
+    <property name="basedir" value="/usr/local/eclipseworkspace/puzzle"/>
+    <property name="maven.mode.standalone" value="true"/>
+    <property name="env.M2" value="/usr/local/apache-maven/bin"/>
+    <property name="env.USERNAME" value="rob"/>
+    <property name="env.SCALA_HOME" value="/usr/local/scala"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="env.GNOME_KEYRING_SOCKET" value="/tmp/keyring-9BQUif/socket"/>
+    <property name="java.specification.version" value="1.6"/>
+  </properties>
+  <testcase time="0.003" classname="com.eccardt.AppTest" name="testKO">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at com.eccardt.AppTest.testKO(AppTest.scala:26)
+</failure>
+  </testcase>
+  <testcase time="0" classname="com.eccardt.AppTest" name="testOK"/>
+</testsuite>
