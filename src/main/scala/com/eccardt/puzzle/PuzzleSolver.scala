@@ -18,9 +18,9 @@ object PuzzleSolver {
 	 import java.net.URL
 	 import scala.io.Source
 	 // for Scala version 2.8:
-	 //val lines = Source.fromURL(new URL("http://en.wikipedia.org/wiki/List_of_United_States_cities_by_population")).getLines().toList
+	 val lines = Source.fromURL(new URL("http://en.wikipedia.org/wiki/List_of_United_States_cities_by_population")).getLines().toList
 	 // for 2.7.5:
-	 val lines = Source.fromURL(new URL("http://en.wikipedia.org/wiki/List_of_United_States_cities_by_population")).getLines.toList
+	 //val lines = Source.fromURL(new URL("http://en.wikipedia.org/wiki/List_of_United_States_cities_by_population")).getLines.toList
 	 val tableLines = lines.dropWhile(! _.contains("wikitable sortable")).takeWhile(! _.contains("</table>"))
 	 XML.loadString(tableLines.mkString + "</table>")
   }
@@ -32,16 +32,17 @@ object PuzzleSolver {
 	 //val theXML = XML.loadFile("/usr/local/eclipseworkspace/PuzzleSolver/src/cities.xml")
 
 	 // The rows have 4 tds, the second of which contains the city name.
+	 // Tried it 11/20/2011 - now it has 6 tds but the city is still the second
 	 val allCities = ( (0,List[String]()) /: theXML \\ "td") { 
 		(x,theCity) => x match {
-		  case (counter,lastList) if(counter % 4 != 1) => (counter + 1,lastList)
+		  case (counter,lastList) if(counter % 6 != 1) => (counter + 1,lastList)
 		  case (counter,lastList) => (counter + 1,theCity.text.toLowerCase :: lastList)
 		}
 	 }._2
-	 //val fourLetterCities = {for(c <- allCities if(c.length == 4)) yield c}.toSet
+	 val fourLetterCities = {for(c <- allCities if(c.length == 4)) yield c}.toSet
 	 // for 2.7.5:
-	 val fourLetterCities = (Set[String]() /: {for(c <- allCities if(c.length == 4)) yield c}) 
-	 	{(lastSet,theCity)=> lastSet + theCity}
+	 //val fourLetterCities = (Set[String]() /: {for(c <- allCities if(c.length == 4)) yield c}) 
+	 //	{(lastSet,theCity)=> lastSet + theCity}
 	
 	 for(c <- allCities if(c.length == 6)) {
 		val fourLetterCity = c.substring(1,3) + c.substring(4)
